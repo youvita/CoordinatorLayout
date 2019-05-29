@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CoordinatorLayout</string>
+    <string name="app_decr">Animators that update the UI cause extra rendering work for every frame in which the animation runs. For this reason, using resource intensive animations can negatively impact the performance of your app.
+Work required to animate your UI is added to the animation stage of the rendering pipeline. You can find out if your animations impact the performance of your app by enabling Profile GPU Rendering and monitoring the animation stage.
+Think about the use case and then apply the appropriate way. We can have multiple ObjectAnimators start at same time and for the same duration to do multiple animations, but it is not efficient as no view knows about any other view. To do the same we can use AnimatorSet class.
+In my current project, I have done the following Animators that update the UI cause extra rendering work for every frame in which the animation runs. For this reason, using resource intensive animations can negatively impact the performance of your app.
+Sorry for the inconvenience.)As we can see, there are multiple animations running at the same time. There are 4 simultaneous animations going on. When the search icon is clicked, first the search icon is moving to the left, the logo is fading out, cancel button is fading in and edit text is also fading in. On clicking cancel button, the same animation is played but in reverse.</string>
+</resources>
